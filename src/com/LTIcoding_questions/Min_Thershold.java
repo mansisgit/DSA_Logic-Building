@@ -5,11 +5,11 @@ public class Min_Thershold {
     public static void thresholdCount(String s, int threshold){
         int [] count = new int[256];
 
-        for(char c : s.toCharArray()) count[c]++;
+        for(char c : s.toCharArray()) count[c]++;//for each char in char[],count[a]++=1 like this
 
         for(int i =0;i<256;i++){
             if(count[i]>=threshold){
-                System.out.println((char) i + ":"+count[i]);
+                System.out.println((char) i + ":"+count[i]);//int-->char by(char) method
             }
         }
     }
