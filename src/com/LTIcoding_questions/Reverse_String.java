@@ -12,7 +12,7 @@ public class Reverse_String {
             rev.append(" ");
         }
 
-        return rev.toString();
+        return rev.toString().trim();
     }
 
     public static void main(String[] args) {
