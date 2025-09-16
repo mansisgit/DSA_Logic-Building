@@ -1,6 +1,4 @@
-
 import java.util.*;
-
 public class Halloumi_Boxes  {
     public static void main(String[] args)  {
         Scanner sc = new Scanner(System.in);
