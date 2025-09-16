@@ -13,22 +13,19 @@ public class BrokenKeyBoard {
             boolean flag = true;
             for(int i =0;i<length;i++){
                 presscount++;
-                if(presscount % 2 == 0 && i+1<length && word.charAt(i) == word.charAt(i+1)){
-                    i++;
-                }else{
-                    if(i!=length-1){
+                if(presscount%2 ==0){//check only for even press
+
+                    if(i+1<length && word.charAt(i) == word.charAt(i+1)){
+                        i++;
+                    }else{
                         flag=false;
+                        break;
                     }
                 }
             }
-
-
-            if(flag){
-                System.out.println("YES");
-            }else{
-                System.out.println("NO");
+            System.out.println(flag ? "YES":"NO");
             }
 
         }
     }
-}
+
