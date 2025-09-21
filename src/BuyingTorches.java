@@ -19,7 +19,7 @@ public class BuyingTorches {
             long Sticks_needed = Sticks_for_1_coal*torches + torches-1;
 
             long trade = 0;
-            trade = cell_division(Sticks_needed,Sticks_gained);
+            trade = cell_division(Sticks_needed,Sticks_gained);//trade1
             trade+=torches;//trade type 2;
 
             System.out.println(trade);
