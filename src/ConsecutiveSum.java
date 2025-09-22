@@ -16,6 +16,7 @@ public class ConsecutiveSum {
             }
 
             int[] max = new int[k];
+            Arrays.fill(max,Integer.MIN_VALUE);
 
             for(int i =0;i<lenght;i++){
                 int reminder = i%k;//index ko devide karna hai not the number
